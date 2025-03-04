@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#030028</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="navyblue">#190564</color>
+    <color name="yellow">#FACD54</color>
+
+    <!-- Cores Custom-->
+    <color name="fundo">#FF5200</color>
+    <color name="primaria">#190564</color>
+    <color name="primaria_variacao">#FACD54</color>
+</resources>
