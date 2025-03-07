@@ -4,6 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="navyblue">#190564</color>
     <color name="yellow">#FACD54</color>
+    <color name="red">#F43636</color>
+    <color name="green">#4CAF50</color>
 
     <!-- Cores Custom-->
     <color name="fundo">#FF5200</color>
