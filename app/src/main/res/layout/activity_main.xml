@@ -40,7 +40,7 @@
         android:hint="Digite seu Nome:">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputTextName"
+            android:id="@+id/edit_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#ffffff"
@@ -59,7 +59,7 @@
         android:hint="Digite seu Email:">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputTextEmail"
+            android:id="@+id/edit_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#ffffff"
@@ -79,7 +79,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputTextPhone"
+            android:id="@+id/edit_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#ffffff"
@@ -87,7 +87,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btnRegister"
+        android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_below="@id/inputLayoutPhone"
