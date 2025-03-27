@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CadastroDePessoas</string>
+
+    <string name="title_register">CADASTRO</string>
+    <string name="name_register">Digite seu Nome:</string>
+    <string name="age_register">Digite sua Idade:</string>
+    <string name="address_register">Digite seu Endereço:</string>
+    <string name="email_register">Digite seu Email:</string>
+    <string name="phone_register">Digite seu Número de Telefone:</string>
+    <string name="btn_register">CADASTRAR</string>
+
+    <string name="title_RegisteredData">DADOS CADASTRADOS</string>
+    <string name="yourData_RegisteredData">SEUS DADOS</string>
+    <string name="name_RegisteredData">Nome:</string>
+    <string name="age_RegisteredData">Idade:</string>
+    <string name="address_RegisteredData">Endereço:</string>
+    <string name="email_RegisteredData">Email:</string>
+    <string name="phone_RegisteredData">Número de Telefone:</string>
+    <string name="confirmData_RegisteredData">Os dados acima estão corretos?</string>
+    <string name="btnConfirm_RegisteredData">CONFIRMAR</string>
+    <string name="btnBack_RegisteredData">NÃO</string>
+
+    <string name="title_about">SOBRE</string>
+    <string name="info_about">Informações do Aluno</string>
+    <string name="ra_about">R.A.:</string>
+    <string name="graduation_about">Graduação:</string>
+    <string name="course_about">Matéria:</string>
+    <string name="teacher_about">Professor:</string>
+
+    <string name="toast_retry">Por favor, preencha todos os campos.</string>
+    <string name="toast_success">Cadastro salvo com sucesso!</string>
+
+</resources>

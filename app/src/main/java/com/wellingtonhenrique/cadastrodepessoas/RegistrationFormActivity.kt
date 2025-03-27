@@ -36,16 +36,16 @@ class RegistrationFormActivity : AppCompatActivity() {
             val email = bundle.getString("email")
             val phone = bundle.getString("phone")
 
-            textName.text = "Nome: $name"
-            textAge.text = "Idade: $age"
-            textAddress.text = "Endereço: $address"
-            textEmail.text = "Email: $email"
-            textPhone.text = "Telefone: $phone"
+            textName.text = name
+            textAge.text = age
+            textAddress.text = address
+            textEmail.text = email
+            textPhone.text = phone
         }
 
         btnConfirm.setOnClickListener {
             setResult(RESULT_OK, intent)
-            Toast.makeText(this, "Cadastro salvo com sucesso!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.toast_success) , Toast.LENGTH_SHORT).show()
             finish()
         }
 
