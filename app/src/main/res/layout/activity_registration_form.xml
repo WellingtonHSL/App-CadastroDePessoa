@@ -15,7 +15,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="DADOS CADASTRADOS"/>
+        app:title="@string/title_RegisteredData"/>
 
     <TextView
         android:id="@+id/dados"
@@ -24,109 +24,176 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:layout_below="@id/tool_bar_dados"
-        android:text="SEUS DADOS"
+        android:text="@string/yourData_RegisteredData"
         android:textSize="32sp"
         android:textStyle="bold"/>
 
-    <TextView
-        android:id="@+id/text_name"
+    <LinearLayout
+        android:id="@+id/linearName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/dados"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="26dp"
-        android:text="Nome"
-        android:textSize="18sp"/>
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/dados">
 
-    <TextView
-        android:id="@+id/text_age"
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_RegisteredData"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/text_name"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="20dp"
-        android:text="Idade"
-        android:textSize="18sp"/>
+        android:layout_below="@id/linearName">
 
-    <TextView
-        android:id="@+id/text_address"
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age_RegisteredData"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/text_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/text_age"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="20dp"
-        android:text="Endereço"
-        android:textSize="18sp" />
+        android:layout_below="@id/linearAge">
 
-    <TextView
-        android:id="@+id/text_email"
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address_RegisteredData"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/text_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_address"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="20dp"
-        android:text="Email"
-        android:textSize="18sp"/>
+        android:layout_below="@id/linearAddress">
 
-    <TextView
-        android:id="@+id/text_phone"
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_RegisteredData"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/text_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_email"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="20dp"
-        android:text="Telefone"
-        android:textSize="18sp"/>
+        android:layout_below="@id/linearEmail">
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_RegisteredData"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/text_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_phone"
+        android:layout_below="@id/linearPhone"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="32dp"
-        android:text="Os dados acima estão corretos?"
+        android:text="@string/confirmData_RegisteredData"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/text"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp">
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/btn_back"
-            android:layout_width="168dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text"
-            android:layout_alignParentStart="true"
-            android:text="NÃO"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:text="@string/btnBack_RegisteredData"
             android:textSize="18sp"
             android:textStyle="bold"
             app:cornerRadius="5dp"
             android:backgroundTint="@color/red"/>
 
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"/>
+
         <Button
             android:id="@+id/btn_confirm"
-            android:layout_width="168dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text"
-            android:layout_toEndOf="@id/btn_back"
-            android:layout_marginStart="16dp"
-            android:text="CONFIRMAR"
+            android:layout_weight="1"
+            android:layout_marginEnd="16dp"
+            android:text="@string/btnConfirm_RegisteredData"
             android:textSize="18sp"
             android:textStyle="bold"
             app:cornerRadius="5dp"

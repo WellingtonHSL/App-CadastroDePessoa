@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">CadastroDePessoas</string>
+
+    <string name="title_register">REGISTER</string>
+    <string name="name_register">Enter your Name:</string>
+    <string name="age_register">Enter your Age:</string>
+    <string name="address_register">Enter your Address:</string>
+    <string name="email_register">Enter your Email:</string>
+    <string name="phone_register">Enter your Phone Number:</string>
+    <string name="btn_register">REGISTER</string>
+
+    <string name="title_RegisteredData">REGISTRATION DATA</string>
+    <string name="yourData_RegisteredData">YOUR DATA</string>
+    <string name="name_RegisteredData">Name:</string>
+    <string name="age_RegisteredData">Age:</string>
+    <string name="address_RegisteredData">Address:</string>
+    <string name="email_RegisteredData">Email:</string>
+    <string name="phone_RegisteredData">Phone Number:</string>
+    <string name="confirmData_RegisteredData">Is the above data correct?</string>
+    <string name="btnConfirm_RegisteredData">CONFIRM</string>
+    <string name="btnBack_RegisteredData">NO</string>
+
+
+    <string name="title_about">ABOUT</string>
+    <string name="info_about">Student Information</string>
+    <string name="ra_about">R.A.:</string>
+    <string name="graduation_about">Graduation:</string>
+    <string name="course_about">Course:</string>
+    <string name="teacher_about">Teacher:</string>
+
+
+    <string name="toast_retry">Please fill in all fields.</string>
+    <string name="toast_success">Registration saved successfully!</string>
+
 </resources>

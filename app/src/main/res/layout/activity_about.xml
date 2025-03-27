@@ -14,7 +14,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="SOBRE"/>
+        app:title="@string/title_about"/>
 
     <ImageView
         android:id="@+id/imageProfile"
@@ -43,7 +43,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_below="@id/myName"
-        android:text="Informações do Aluno"
+        android:text="@string/info_about"
         android:textSize="20dp"
         android:textStyle="bold"/>
 
@@ -58,7 +58,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="R.A.:"
+            android:text="@string/ra_about"
             android:textStyle="bold"
             android:textSize="16sp"/>
 
@@ -81,7 +81,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Curso:"
+            android:text="@string/graduation_about"
             android:textSize="16sp"
             android:textStyle="bold"/>
 
@@ -104,7 +104,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Matéria:"
+            android:text="@string/course_about"
             android:textSize="16sp"
             android:textStyle="bold"/>
 
@@ -127,7 +127,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Professor:"
+        android:text="@string/teacher_about"
         android:textSize="16sp"
         android:textStyle="bold"/>
 

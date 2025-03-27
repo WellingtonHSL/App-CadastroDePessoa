@@ -13,7 +13,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="CADASTRO"/>
+        app:title="@string/title_register"/>
 
     <ImageView
         android:id="@+id/imageRegister"
@@ -33,7 +33,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:hint="Digite seu Nome:">
+        android:hint="@string/name_register">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_name"
@@ -52,7 +52,7 @@
         android:layout_marginTop="14dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:hint="Digite sua idade:">
+        android:hint="@string/age_register">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_age"
@@ -71,7 +71,7 @@
         android:layout_marginTop="14dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:hint="Digite seu Endereço:">
+        android:hint="@string/address_register">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_address"
@@ -90,7 +90,7 @@
         android:layout_marginTop="14dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:hint="Digite seu Email:">
+        android:hint="@string/email_register">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_email"
@@ -109,7 +109,7 @@
         android:layout_marginTop="14dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:hint="Digite seu Telefone:"
+        android:hint="@string/phone_register"
         >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -129,7 +129,7 @@
         android:layout_marginLeft="34dp"
         android:layout_marginTop="24dp"
         android:layout_marginRight="34dp"
-        android:text="CADASTRAR"
+        android:text="@string/btn_register"
         android:textSize="20sp"
         android:textStyle="bold"
         app:cornerRadius="5dp" />

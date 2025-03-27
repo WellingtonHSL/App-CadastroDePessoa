@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
                 startActivity(intent)
             } else {
-                Toast.makeText(this, "Por favor, preencha todos os campos.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.toast_retry), Toast.LENGTH_SHORT).show()
             }
         }
     }
