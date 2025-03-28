@@ -44,13 +44,13 @@ class RegistrationFormActivity : AppCompatActivity() {
         }
 
         btnConfirm.setOnClickListener {
-            setResult(RESULT_OK, intent)
+            setResult(RESULT_OK)
             Toast.makeText(this, getString(R.string.toast_success) , Toast.LENGTH_SHORT).show()
             finish()
         }
 
         btnBack.setOnClickListener {
-            setResult(RESULT_CANCELED, intent)
+            setResult(RESULT_CANCELED)
             finish()
         }
     }

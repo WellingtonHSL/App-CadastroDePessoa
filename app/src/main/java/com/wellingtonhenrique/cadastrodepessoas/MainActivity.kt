@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var editPhone: EditText
     private lateinit var btnRegister: Button
 
+    private val REQUEST_CODE = 1
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -42,27 +44,39 @@ class MainActivity : AppCompatActivity() {
             val email = editEmail.text.toString()
             val phone = editPhone.text.toString()
 
-            if ( name.isNotEmpty() && email.isNotEmpty() && phone.isNotEmpty()) {
+            if (name.isNotEmpty() && email.isNotEmpty() && phone.isNotEmpty()) {
                 intent.putExtra("name", name.toString())
                 intent.putExtra("age", age.toString())
                 intent.putExtra("address", address.toString())
                 intent.putExtra("email", email.toString())
                 intent.putExtra("phone", phone.toString())
 
-                startActivity(intent)
+                startActivityForResult(intent, REQUEST_CODE)
             } else {
                 Toast.makeText(this, getString(R.string.toast_retry), Toast.LENGTH_SHORT).show()
             }
         }
     }
 
-    // Inflando o menu na ActionBar
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                editName.text.clear()
+                editAge.text.clear()
+                editAddress.text.clear()
+                editEmail.text.clear()
+                editPhone.text.clear()
+            }
+        }
+    }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
         return true
     }
-
-    // Lidando com o clique no ícone de perfil
+    
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.menu_profile -> {
