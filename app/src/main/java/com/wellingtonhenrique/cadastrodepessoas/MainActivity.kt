@@ -2,6 +2,7 @@ package com.wellingtonhenrique.cadastrodepessoas
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
@@ -19,11 +20,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var editPhone: EditText
     private lateinit var btnRegister: Button
 
+    private val TAG = "lifeCycle"
     private val REQUEST_CODE = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        Log.d(TAG, "onCrate - Register")
 
         val toolbar: Toolbar = findViewById(R.id.tool_bar)
         setSupportActionBar(toolbar)
@@ -58,6 +61,36 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override  fun onStart() {
+        super.onStart()
+        Log.d(TAG, "onStart - Register")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "onResume - Register")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "onPause - Register")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "onStop - Register")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "onRestart - Register")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "onDestroy - Register")
+    }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -76,7 +109,7 @@ class MainActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.main_menu, menu)
         return true
     }
-    
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.menu_profile -> {

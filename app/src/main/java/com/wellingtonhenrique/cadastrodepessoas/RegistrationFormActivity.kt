@@ -1,6 +1,7 @@
 package com.wellingtonhenrique.cadastrodepessoas
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -16,9 +17,12 @@ class RegistrationFormActivity : AppCompatActivity() {
     private lateinit var btnBack: Button
     private lateinit var btnConfirm: Button
 
+    private val TAG = "lifeCycle"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration_form)
+        Log.d(TAG, "onCrate - Registration Data")
 
         textName = findViewById(R.id.text_name)
         textAge = findViewById(R.id.text_age)
@@ -53,5 +57,35 @@ class RegistrationFormActivity : AppCompatActivity() {
             setResult(RESULT_CANCELED)
             finish()
         }
+    }
+
+    override  fun onStart() {
+        super.onStart()
+        Log.d(TAG, "onStart - Registration Data")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "onResume - Registration Data")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "onPause - Registration Data")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "onStop - Registration Data")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "onRestart - Registration Data")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "onDestroy - Registration Data")
     }
 }
