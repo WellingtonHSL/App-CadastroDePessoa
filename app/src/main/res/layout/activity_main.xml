@@ -21,6 +21,7 @@
         android:layout_height="179dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/tool_bar"
+        android:layout_marginTop="20dp"
         android:contentDescription="Imagem de cadastro"
         android:src="@drawable/image" />
 
